@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    <!-- transition animation -->
+        <item name="android:windowEnterTransition">@transition/transition</item>
+        <item name="android:windowTransitionBackgroundFadeDuration">1275</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/transition</item>
+    </style>
+
+    <style name="NewsNoDescription">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="NewsDescription">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="toolbar_subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

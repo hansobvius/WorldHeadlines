@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WorldHeadlines</string>
+    <string name="invalid_keyword">Article not found. Invalid keyword</string>
+    <string name="country_select">Country Select</string>
+    <string name="appwidget_text">WordHeadlines Widget</string>
+    <string name="image_article_widget">image_article_widget</string>
+    <string name="no_connection">No internet connection</string>
+    <string name="about_button_widget_advice">Click on the right button to load next article</string>
+    <string name="image_article">image article view</string>
+    <string name="no_description">No Description</string>
+    <string name="invalid_word">Invalid Keyword</string>
+    <string name="search">search</string>
+    <string name="country">country</string>
+    <string name="source">source</string>
+    <string name="date">date</string>
+    <string name="default_country_name">United States</string>
+    <string name="you_are_on">You are on</string>
+    <string name="query">query for</string>
+    <string name="date_houer">date/houer</string>
+    <string name="search_hint">query for a subject</string>
+</resources>
