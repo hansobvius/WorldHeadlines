@@ -7,6 +7,7 @@ a button to share the news and the link that takes the user to the newspaper's f
 To build this app was used the Api's:
 - RecyclerView
 - Volley
+- Picasso
 - SQLite
 - ContentProvider
 - WebView
