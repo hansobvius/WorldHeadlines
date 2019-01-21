@@ -13,7 +13,7 @@ public class Constants {
     public static final String PARAM_QUERY = "q";
 
     public static final String KEY_QUERY =  "apiKey";
-    public static final String KEY = "API USER KEY";
+    public static final String KEY = "f452ccae13fd4ab0bb3518bd59adc3ed";
 
     /**
      * String keys for Dialog Fragement
