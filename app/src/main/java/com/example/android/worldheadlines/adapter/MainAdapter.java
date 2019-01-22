@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
@@ -80,11 +81,19 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.NumberViewHold
 
         if(!mDescription.equals("null")){
             holder.mDescriptionView.setText(mDescription);
-            holder.mDescriptionView.setTextAppearance(R.style.NewsDescription);
+            if(Build.VERSION.SDK_INT < Build.VERSION_CODES.M){
+                holder.mDescriptionView.setTextAppearance(mContext, R.style.NewsDescription);
+            }else {
+                holder.mDescriptionView.setTextAppearance(R.style.NewsDescription);
+            }
         }
         else{
             holder.mDescriptionView.setText(mContext.getResources().getString(R.string.no_description));
-            holder.mDescriptionView.setTextAppearance(R.style.NewsNoDescription);
+            if(Build.VERSION.SDK_INT < Build.VERSION_CODES.M){
+                holder.mDescriptionView.setTextAppearance(mContext, R.style.NewsNoDescription);
+            }else{
+                holder.mDescriptionView.setTextAppearance(R.style.NewsNoDescription);
+            }
         }
     }
 
