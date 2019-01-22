@@ -98,7 +98,7 @@ public class HeadlinesIntentService extends IntentService {
                 mCount = 0;
             }
 
-            if(cursor.getCount() >= 0) {
+            if(cursor.getCount() > 0) {
                 s = getDataFromCursor(cursor, mCount);
                 i = getImageFromCursor(cursor, mCount);
                 mCount++;
