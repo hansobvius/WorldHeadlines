@@ -35,7 +35,7 @@ public class HeadlinesWidgetProvider extends AppWidgetProvider {
 
         Intent mainActivityIntent = new Intent(context, MainActivity.class);
         PendingIntent mainPendingIntent = PendingIntent.getActivity(context, 0, mainActivityIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        views.setTextViewText(R.id.appwidget_text, title);
+        views.setTextViewText(R.id.appwidget_text, (title != "") ? title : context.getResources().getString(R.string.about_button_widget_advice));
         views.setOnClickPendingIntent(R.id.appwidget_text, mainPendingIntent);
 
         Intent nextArticleIntent = new Intent(context, HeadlinesIntentService.class);

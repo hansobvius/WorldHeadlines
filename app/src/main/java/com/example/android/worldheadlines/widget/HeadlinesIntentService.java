@@ -18,6 +18,9 @@ public class HeadlinesIntentService extends IntentService {
     private static int[] mAppWidgetIds;
     public static final String NEXT_VIEW_WIDGET = "com.example.android.worldheadlines.widget.action.article_list";
 
+    private String s = "";
+    private String i = "";
+
     public HeadlinesIntentService() {
         super("HeadlinesIntentService");
     }
@@ -95,9 +98,11 @@ public class HeadlinesIntentService extends IntentService {
                 mCount = 0;
             }
 
-            String s = getDataFromCursor(cursor, mCount);
-            String i = getImageFromCursor(cursor, mCount);
-            mCount++;
+            if(cursor.getCount() >= 0) {
+                s = getDataFromCursor(cursor, mCount);
+                i = getImageFromCursor(cursor, mCount);
+                mCount++;
+            }
 
             HeadlinesWidgetProvider.updateWidget(mContext, appWidgetManager, s, i, mAppWidgetIds != null ? mAppWidgetIds : appWidgetIds);
         }
