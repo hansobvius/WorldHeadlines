@@ -24,9 +24,9 @@ public class NotificationBuilder extends Notification {
         this.mNotification = notification;
     }
 
-    public Notification.Builder builder  = new Notification.Builder(context, CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_stat_name)
-            .setContentText("Check for foreground service")
-            .setContentTitle("Foreground Service")
-            .setPriority(Notification.PRIORITY_DEFAULT);
+//    public Notification.Builder builder  = new Notification.Builder(context, CHANNEL_ID)
+//            .setSmallIcon(R.drawable.ic_stat_name)
+//            .setContentText("Check for foreground service")
+//            .setContentTitle("Foreground Service")
+//            .setPriority(Notification.PRIORITY_DEFAULT);
 }

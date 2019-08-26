@@ -48,7 +48,7 @@
                 android:resource="@xml/app_widget_info"/>
         </receiver>
 
-        <service android:name=".widget.HeadlinesIntentService"
+        <service android:name=".widget.WidgetService"
             android:exported="false"/>
 
         <meta-data
